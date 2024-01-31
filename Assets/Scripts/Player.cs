@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private float _speed = 3.5f;
-    private Vector3 _startPosition = new Vector3(0, 0, 0);
+    [SerializeField]
+    private Vector3 _startPosition = new Vector3(0, 1, 0);
     [SerializeField]
     private GameObject _laserPrefab;
     [SerializeField]
@@ -18,7 +19,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = _startPosition;//set start pos to (0, 0, 0)
+        transform.position = _startPosition;
     }
 
     // Update is called once per frame
